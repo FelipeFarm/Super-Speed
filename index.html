@@ -44,7 +44,7 @@
     <span>Serving Greater Houston<span class="utility__license"> &middot; TX RMP #41827 &middot; TACLB #88214</span></span>
     <div class="utility__meta">
       <span>Mon&ndash;Fri 8am&ndash;6pm &middot; Sat by appointment</span>
-      <a href="tel:+17135550142">(713) 555-0142</a>
+      <span class="utility__phone"><span>Call for a free quote</span><a href="tel:+17135550142">(713) 555-0142</a></span>
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@
 <header class="header" id="siteHeader">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
+      <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="68" height="68" aria-hidden="true">
       <span>
         <span class="brand__name">Super Speed Remodeling</span>
         <span class="brand__tag">Speed You Can Trust</span>
@@ -74,10 +74,6 @@
     </nav>
 
     <div class="header__cta">
-      <a class="header__phone" href="tel:+17135550142">
-        <small>Call for a free quote</small>
-        <strong>(713) 555-0142</strong>
-      </a>
       <a class="btn" href="contact.html">Free Consultation</a>
     </div>
 
@@ -91,35 +87,42 @@
 <main id="main">
 
   <!-- ===== Hero ===== -->
+  <!-- Webflow: Section (position relative) > background Image (100%/100%, cover)
+       > white gradient overlay > Container > text block, max-width ~40rem. -->
   <section class="hero hero--home">
-    <img class="hero__bg" src="https://images.unsplash.com/photo-1682888813913-e13f18692019?auto=format&amp;fit=crop&amp;w=1900&amp;q=70" alt="" aria-hidden="true" fetchpriority="high">
-    <div class="hero__frame" aria-hidden="true"></div>
+    <img class="hero__bg"
+         src="https://images.pexels.com/photos/7535073/pexels-photo-7535073.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000"
+         alt="Remodeled kitchen with white cabinetry and contemporary appliances"
+         fetchpriority="high">
     <div class="wrap">
       <div class="hero__inner">
-        <p class="eyebrow eyebrow--light">Houston &amp; surrounding counties</p>
+        <p class="eyebrow">Houston &amp; surrounding counties</p>
         <h1>Kitchens and bathrooms, done right the first time.</h1>
-        <p class="hero__sub">Design, demo, and install handled by one crew under one written price. Most bathrooms finish in days. Most kitchens in weeks, not months.</p>
+        <p class="hero__sub">Design, demo and install handled by one crew under one written price. Most bathrooms finish in days. Most kitchens in weeks, not months.</p>
         <div class="btn-row">
-          <a class="btn btn--lg" href="#quote">Get My Free Design Quote</a>
-          <a class="btn btn--lg btn--onDark" href="#services">See What We Do</a>
+          <a class="btn btn--lg" href="#start">Get My Free Design Quote</a>
+          <a class="btn btn--lg btn--ghost" href="#services">See What We Do</a>
         </div>
         <ul class="hero__ticks">
           <li>Free in-home design visit</li>
           <li>Fixed written pricing</li>
           <li>Licensed &amp; insured</li>
-          <li>Financing available</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- ===== Quick-start form ===== -->
-  <section class="quickstart" id="quote">
+  <!-- ===== Start panel: quick form + proof, one card ===== -->
+  <!-- Webflow: Section > Container > one white card. Row 1 = form, Row 2 = 4 stats. -->
+  <section class="startbar" id="start">
     <div class="wrap">
-      <div class="quickstart__card">
-        <p class="quickstart__title">Start here. Two questions and a callback within one business day.</p>
-        <!-- GHL SWAP POINT (quickstart__row) - Hero quick-capture (3 fields). In Webflow: keep the .quickstart__card wrapper and drop the GHL embed inside it. -->
-            <form class="quickstart__row" id="quickForm" novalidate>
+      <div class="startbar__card">
+
+        <p class="startbar__title">Start here</p>
+        <p class="startbar__note">Two questions and a callback within one business day.</p>
+
+        <!-- GHL SWAP POINT (quickForm) - 3-field quick capture. In Webflow: keep the .startbar__card wrapper and drop the GHL embed in place of this form. -->
+        <form class="startbar__row" id="quickForm" novalidate>
           <div class="field">
             <label for="q-service">What are you remodeling? <span class="req">*</span></label>
             <select id="q-service" name="service" required>
@@ -143,31 +146,33 @@
             <button class="btn btn--block" id="q-submit" type="submit">Check Availability</button>
           </div>
         </form>
-            <!-- END GHL SWAP POINT (quickstart__row) -->
-        <p class="form-status" id="quickStatus" role="status"></p>
-        <p class="form-note mt-5">No obligation. We do not sell your information. <a href="contact.html">Prefer the full form?</a></p>
-      </div>
-    </div>
-  </section>
+        <!-- END GHL SWAP POINT (quickForm) -->
 
-  <!-- ===== Trust bar ===== -->
-  <section class="trustbar" aria-label="Company facts">
-    <div class="wrap">
-      <div class="trustbar__item">
-        <span class="trustbar__num">2,400+</span>
-        <span class="trustbar__label">Houston-area homes remodeled</span>
-      </div>
-      <div class="trustbar__item">
-        <span class="trustbar__num">4.9&#9733;</span>
-        <span class="trustbar__label">Average of 380+ reviews</span>
-      </div>
-      <div class="trustbar__item">
-        <span class="trustbar__num">18 yrs</span>
-        <span class="trustbar__label">Serving Greater Houston</span>
-      </div>
-      <div class="trustbar__item">
-        <span class="trustbar__num">10 yr</span>
-        <span class="trustbar__label">Workmanship warranty</span>
+        <p class="form-status" id="quickStatus" role="status"></p>
+        <p class="startbar__fine">No obligation. We do not sell your information. <a href="contact.html">Prefer the full form?</a></p>
+
+        <!-- Figures below are published by Super Speed Home Buyers, the sister
+             home-buying company. They describe that business, not remodeling. -->
+        <div class="startbar__proof">
+          <div class="proof">
+            <span class="proof__num">500+</span>
+            <span class="proof__label">Houston homes purchased</span>
+          </div>
+          <div class="proof">
+            <span class="proof__num">4.9&#9733;</span>
+            <span class="proof__label">Average customer rating</span>
+          </div>
+          <div class="proof">
+            <span class="proof__num">7 days</span>
+            <span class="proof__label">Average close time</span>
+          </div>
+          <div class="proof">
+            <span class="proof__num">100%</span>
+            <span class="proof__label">No-fee transactions</span>
+          </div>
+        </div>
+        <p class="startbar__source">Track record of <a href="https://superspeedhomebuyers.com/reviews" rel="noopener">Super Speed Home Buyers</a>, our home-buying company and the same team behind Super Speed Remodeling.</p>
+
       </div>
     </div>
   </section>
@@ -184,7 +189,7 @@
       <div class="grid grid--2">
         <article class="card card--feature" data-reveal>
           <div class="card__media">
-            <img src="https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Remodeled kitchen with white cabinetry and a large island" loading="lazy">
+            <img src="https://images.pexels.com/photos/2398375/pexels-photo-2398375.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Remodeled kitchen with sleek white cabinets and a centre island" loading="lazy">
           </div>
           <div class="card__body">
             <h3>Kitchen Remodeling</h3>
@@ -195,7 +200,7 @@
 
         <article class="card card--feature" data-reveal>
           <div class="card__media">
-            <img src="https://images.pexels.com/photos/6957081/pexels-photo-6957081.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Modern remodeled bathroom with a glass walk-in shower" loading="lazy">
+            <img src="https://images.pexels.com/photos/7005268/pexels-photo-7005268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Remodeled bathroom with a glass shower cabin and vanity mirror" loading="lazy">
           </div>
           <div class="card__body">
             <h3>Bathroom Remodeling</h3>
@@ -329,7 +334,7 @@
   </section>
 
   <!-- ===== Gallery ===== -->
-  <section class="section section--cream">
+  <section class="section">
     <div class="wrap">
       <div class="section-head section-head--center" data-reveal>
         <p class="eyebrow">Recent work</p>
@@ -338,21 +343,64 @@
       </div>
       <div class="gallery">
         <figure class="gallery__wide gallery__tall">
-          <img src="https://images.unsplash.com/photo-1609347744403-2306e8a9ae27?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" alt="Kitchen remodel with marble island and pendant lighting" loading="lazy">
+          <img src="https://images.pexels.com/photos/373541/pexels-photo-373541.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Clean contemporary kitchen with white cabinetry" loading="lazy">
         </figure>
         <figure>
-          <img src="https://images.pexels.com/photos/7031840/pexels-photo-7031840.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Bathroom with tiled walk-in shower" loading="lazy">
+          <img src="https://images.pexels.com/photos/7534282/pexels-photo-7534282.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Bathroom with a glass shower cabin and polished tiled walls" loading="lazy">
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1683917067889-c88599491d5c?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Kitchen with dark cabinetry" loading="lazy">
+          <img src="https://images.pexels.com/photos/6969865/pexels-photo-6969865.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Kitchen with black and white cabinetry and counter stools" loading="lazy">
         </figure>
         <figure>
-          <img src="https://images.pexels.com/photos/8082195/pexels-photo-8082195.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Bathroom vanity with stone countertop" loading="lazy">
+          <img src="https://images.pexels.com/photos/11701113/pexels-photo-11701113.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Bathroom with marble walls, dual sinks and a large mirror" loading="lazy">
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1571843439991-dd2b8e051966?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Kitchen with a large center island" loading="lazy">
+          <img src="https://images.pexels.com/photos/6758351/pexels-photo-6758351.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Spacious kitchen with white cupboards and a dining table" loading="lazy">
         </figure>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <!-- SOURCE: superspeedhomebuyers.com/reviews - verbatim, names and dates as published.
+       These are reviews of the SISTER home-buying company, not of remodeling work.
+       The section heading and the note below say so explicitly. Do not remove that
+       attribution until genuine remodeling reviews are collected to replace these. -->
+  <section class="section section--cream" id="reviews">
+    <div class="wrap">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Reviews</p>
+        <h2>The same team, the same standard</h2>
+        <p class="lede">Super Speed Remodeling is the renovation arm of Super Speed Home Buyers, which has bought over 500 Houston homes at a 4.9-star average. These are their customers, in their own words.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;They were honest and transparent the whole way through. No hidden fees, no last-minute surprises. The offer they gave me on day one was the amount I received at closing. Refreshing.&rdquo;</blockquote>
+          <figcaption><strong>Yvonne S.</strong>Cypress, TX &middot; June 2024 &middot; Estate Sale</figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;From first call to closing was 9 days. Nine days! No agent, no fees, no drama. Just a fair cash offer and a smooth closing. If you need to sell fast in Houston, call these guys first.&rdquo;</blockquote>
+          <figcaption><strong>Tony B.</strong>Missouri City, TX &middot; July 2024 &middot; Fast Sale</figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;I relocated for work and needed to sell my house in 3 weeks. My Realtor said that was impossible. Super Speed Home Buyers closed in 12 days. Smooth, professional, fair price. 10 out of 10.&rdquo;</blockquote>
+          <figcaption><strong>Robert M.</strong>Spring, TX &middot; September 2024 &middot; Relocation</figcaption>
+        </figure>
+
+        <figure class="quote" data-reveal>
+          <div class="quote__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>&ldquo;After my divorce I just needed to sell fast and move on. The team was professional, compassionate, and didn&rsquo;t waste my time. They handled everything. Closing was smooth and I got my check the same day.&rdquo;</blockquote>
+          <figcaption><strong>Linda R.</strong>Katy, TX &middot; December 2024 &middot; Divorce</figcaption>
+        </figure>
+      </div>
+
+      <p class="callout" data-reveal><strong>About these reviews</strong> These are verbatim reviews of Super Speed Home Buyers, our home-buying company, published at <a href="https://superspeedhomebuyers.com/reviews" rel="noopener">superspeedhomebuyers.com/reviews</a>. They describe home purchases rather than remodeling projects. Remodeling reviews are being collected and will replace these.</p>
     </div>
   </section>
 
@@ -472,7 +520,7 @@
     <div class="footer__grid">
       <div>
         <a class="brand" href="index.html">
-          <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
+          <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="68" height="68" aria-hidden="true">
           <span>
             <span class="brand__name">Super Speed Remodeling</span>
             <span class="brand__tag">Speed You Can Trust</span>

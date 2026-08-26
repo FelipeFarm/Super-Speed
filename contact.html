@@ -43,7 +43,7 @@
     <span>Serving Greater Houston<span class="utility__license"> &middot; TX RMP #41827 &middot; TACLB #88214</span></span>
     <div class="utility__meta">
       <span>Mon&ndash;Fri 8am&ndash;6pm &middot; Sat by appointment</span>
-      <a href="tel:+17135550142">(713) 555-0142</a>
+      <span class="utility__phone"><span>Call for a free quote</span><a href="tel:+17135550142">(713) 555-0142</a></span>
     </div>
   </div>
 </div>
@@ -51,7 +51,7 @@
 <header class="header" id="siteHeader">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
+      <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="68" height="68" aria-hidden="true">
       <span>
         <span class="brand__name">Super Speed Remodeling</span>
         <span class="brand__tag">Speed You Can Trust</span>
@@ -72,10 +72,6 @@
     </nav>
 
     <div class="header__cta">
-      <a class="header__phone" href="tel:+17135550142">
-        <small>Call for a free quote</small>
-        <strong>(713) 555-0142</strong>
-      </a>
       <a class="btn" href="#book">Free Consultation</a>
     </div>
 
@@ -88,10 +84,14 @@
 
 <main id="main">
 
-  <!-- ===== Page hero ===== -->
+  <!-- ===== Hero ===== -->
+  <!-- Webflow: Section (position relative) > background Image (100%/100%, cover)
+       > white gradient overlay > Container > text block, max-width ~40rem. -->
   <section class="hero hero--page">
-    <img class="hero__bg" src="https://images.pexels.com/photos/8089092/pexels-photo-8089092.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1900" alt="" aria-hidden="true">
-    <div class="hero__frame" aria-hidden="true"></div>
+    <img class="hero__bg"
+         src="https://images.pexels.com/photos/33599113/pexels-photo-33599113.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2000"
+         alt="Remodeled bathroom with marble surfaces, a double sink and warm lighting"
+         fetchpriority="high">
     <div class="wrap">
       <div class="hero__inner">
         <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -99,6 +99,8 @@
         </nav>
         <h1>Book your free in-home consultation</h1>
         <p class="hero__sub">One visit, about an hour, no deposit and no pressure to sign that day. Fill out the form or call us during business hours and a person picks up.</p>
+        <div class="btn-row">
+        </div>
         <ul class="hero__ticks">
           <li>Reply within one business day</li>
           <li>Evening and Saturday visits</li>
@@ -358,7 +360,7 @@
     <div class="footer__grid">
       <div>
         <a class="brand" href="index.html">
-          <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
+          <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="68" height="68" aria-hidden="true">
           <span>
             <span class="brand__name">Super Speed Remodeling</span>
             <span class="brand__tag">Speed You Can Trust</span>
