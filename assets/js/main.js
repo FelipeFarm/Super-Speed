@@ -1,6 +1,6 @@
 /* =============================================================================
-   Super Speed Homer Buyers - shared behaviour
-   Vanilla JS, no dependencies. Loaded with `defer` on all three pages.
+   Super Speed Remodeling - shared behaviour
+   Vanilla JS, no dependencies. Loaded with `defer` on all four pages.
 
    NOTE: form handling here is a FRONT-END DEMO ONLY. Nothing is submitted
    anywhere. Wire each form to a real endpoint (form provider, CRM webhook or
@@ -107,7 +107,7 @@
 
         if (invalid) {
           field.setAttribute('aria-invalid', 'true');
-          field.style.borderColor = '#B4622C';
+          field.style.borderColor = '#B3382F';
           if (!firstInvalid) firstInvalid = field;
         }
       });
@@ -123,6 +123,22 @@
       status.classList.add('is-visible');
       form.reset();
     });
+  }
+
+  /* --- Scroll reveal ---------------------------------------------------- */
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var targets = document.querySelectorAll('[data-reveal]');
+
+  if (targets.length && !reduce && 'IntersectionObserver' in window) {
+    document.documentElement.classList.add('reveal-ready');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    targets.forEach(function (el) { io.observe(el); });
   }
 
   wireForm(

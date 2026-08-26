@@ -3,19 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kitchen &amp; Bathroom Remodeling in Houston, TX | Super Speed Homer Buyers</title>
-<meta name="description" content="Super Speed Homer Buyers designs and installs kitchen and bathroom remodels across Greater Houston. Free in-home design consultation, fixed written pricing, most installs finished in days.">
+<title>Kitchen &amp; Bathroom Remodeling in Houston, TX | Super Speed Remodeling</title>
+<meta name="description" content="Super Speed Remodeling designs and installs kitchen and bathroom remodels across Greater Houston. Free in-home design consultation, fixed written pricing, most installs finished in days.">
 <link rel="canonical" href="https://www.superspeedremodel.com/">
 
 <!-- =============================================================================
-     DEMO SITE - Super Speed Homer Buyers (fictional company)
+     SUPER SPEED REMODELING
 
-     All names, addresses, phone numbers, license numbers, statistics, reviews,
-     prices, timelines and offers are SAMPLE DATA written for layout purposes.
-     Nothing here describes a real business. Review every fact before launch.
+     BRAND (from the client's Finish Selection Package PDF)
+       Logo    assets/img/logo-mark.png  (504x507, transparent)
+       Green   #0D2E22   Cream #F7F4ED   Gold #C9A65C / #E2CB94
+       Type    Playfair Display (display) + Jost (UI) - both Google Fonts
+       Finish swatches in assets/img/ are extracted from the same PDF.
 
-     Phone numbers use the reserved 555-01XX fictional range on purpose.
-     Photos hotlink to Unsplash/Pexels for comping only, not licensed for production.
+     STILL SAMPLE DATA - replace before launch:
+       address, phone (reserved 555-01XX range), license numbers, stats,
+       prices, timelines, promotional offer.
+     Interior/lifestyle photos hotlink to Unsplash/Pexels for comping only.
 
      BUILD TARGET: Webflow. Forms will be replaced by GoHighLevel embeds.
      See the "GHL SWAP POINT" comments around each <form> element.
@@ -28,7 +32,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -49,17 +53,18 @@
 <header class="header" id="siteHeader">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <span class="brand__mark" aria-hidden="true">SS</span>
+      <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
       <span>
-        <span class="brand__name">Super Speed Homer Buyers</span>
-        <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+        <span class="brand__name">Super Speed Remodeling</span>
+        <span class="brand__tag">Speed You Can Trust</span>
       </span>
     </a>
 
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="kitchen-remodeling.html">Kitchens</a></li>
+        <li><a href="bathroom-remodeling.html">Bathrooms</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav__mobile-cta">
@@ -88,6 +93,7 @@
   <!-- ===== Hero ===== -->
   <section class="hero hero--home">
     <img class="hero__bg" src="https://images.unsplash.com/photo-1682888813913-e13f18692019?auto=format&amp;fit=crop&amp;w=1900&amp;q=70" alt="" aria-hidden="true" fetchpriority="high">
+    <div class="hero__frame" aria-hidden="true"></div>
     <div class="wrap">
       <div class="hero__inner">
         <p class="eyebrow eyebrow--light">Houston &amp; surrounding counties</p>
@@ -95,7 +101,7 @@
         <p class="hero__sub">Design, demo, and install handled by one crew under one written price. Most bathrooms finish in days. Most kitchens in weeks, not months.</p>
         <div class="btn-row">
           <a class="btn btn--lg" href="#quote">Get My Free Design Quote</a>
-          <a class="btn btn--lg btn--onDark" href="services.html">See What We Do</a>
+          <a class="btn btn--lg btn--onDark" href="#services">See What We Do</a>
         </div>
         <ul class="hero__ticks">
           <li>Free in-home design visit</li>
@@ -167,60 +173,87 @@
   </section>
 
   <!-- ===== Services ===== -->
-  <section class="section">
+  <section class="section" id="services">
     <div class="wrap">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center" data-reveal>
         <p class="eyebrow">What we do</p>
         <h2>Two rooms. All of the work.</h2>
         <p class="lede">We do not subcontract the job out and disappear. The same team that draws your layout is the team that sets your tile.</p>
       </div>
 
       <div class="grid grid--2">
-        <article class="card card--feature">
+        <article class="card card--feature" data-reveal>
           <div class="card__media">
             <img src="https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Remodeled kitchen with white cabinetry and a large island" loading="lazy">
           </div>
           <div class="card__body">
             <h3>Kitchen Remodeling</h3>
             <p>Full gut renovations, cabinet refacing, island builds, countertop and backsplash replacement, lighting and electrical updates, and layout changes that open the room up.</p>
-            <a class="link-arrow" href="services.html#kitchens">Explore kitchen remodeling</a>
+            <a class="link-arrow" href="kitchen-remodeling.html">Explore kitchen remodeling</a>
           </div>
         </article>
 
-        <article class="card card--feature">
+        <article class="card card--feature" data-reveal>
           <div class="card__media">
             <img src="https://images.pexels.com/photos/6957081/pexels-photo-6957081.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Modern remodeled bathroom with a glass walk-in shower" loading="lazy">
           </div>
           <div class="card__body">
             <h3>Bathroom Remodeling</h3>
             <p>Full bathroom rebuilds, tub-to-shower conversions, walk-in showers, vanity and tile replacement, and accessible bathrooms built for aging in place.</p>
-            <a class="link-arrow" href="services.html#bathrooms">Explore bathroom remodeling</a>
+            <a class="link-arrow" href="bathroom-remodeling.html">Explore bathroom remodeling</a>
           </div>
         </article>
       </div>
 
       <div class="grid grid--3 mt-5">
-        <article class="card">
+        <article class="card" data-reveal>
           <div class="card__body">
             <h4>Tub-to-Shower Conversions</h4>
             <p>Swap an unused tub for a low-threshold walk-in shower. Typically a two to three day install.</p>
-            <a class="link-arrow" href="services.html#specialty">Details</a>
+            <a class="link-arrow" href="bathroom-remodeling.html#specialty">Details</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-reveal>
           <div class="card__body">
             <h4>Countertops &amp; Cabinetry</h4>
             <p>Quartz, granite and solid surface fabrication, plus refacing when the boxes are still sound.</p>
-            <a class="link-arrow" href="services.html#specialty">Details</a>
+            <a class="link-arrow" href="kitchen-remodeling.html#specialty">Details</a>
           </div>
         </article>
-        <article class="card">
+        <article class="card" data-reveal>
           <div class="card__body">
             <h4>Accessible &amp; Aging-in-Place</h4>
             <p>Grab bars, curbless entries, comfort-height fixtures and turning clearances that actually work.</p>
-            <a class="link-arrow" href="services.html#specialty">Details</a>
+            <a class="link-arrow" href="bathroom-remodeling.html#accessible">Details</a>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Finish Selection Package teaser ===== -->
+  <section class="section section--cream" id="finishes">
+    <div class="wrap">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">The Selection Package</p>
+        <h2>Every finish decided before demo day</h2>
+        <p class="lede">Clients work through a curated book of paint, flooring, tile, countertops, cabinetry, hardware and fixtures. One option per category, signed off in writing, so nothing is being decided while a crew stands in your house.</p>
+      </div>
+
+      <div class="swatches" data-reveal>
+        <figure class="swatch"><img src="assets/img/cab-white-shaker.jpg" alt="White Shaker cabinet door" loading="lazy"><figcaption><span class="swatch__name">Cabinetry</span><span class="swatch__meta">14 door styles</span></figcaption></figure>
+        <figure class="swatch"><img src="assets/img/qz-calacatta-laza.jpg" alt="Calacatta Laza quartz countertop" loading="lazy"><figcaption><span class="swatch__name">Countertops</span><span class="swatch__meta">12 quartz</span></figcaption></figure>
+        <figure class="swatch"><img src="assets/img/sig-wall-zellige-crema.jpg" alt="Zellige Crema wall tile" loading="lazy"><figcaption><span class="swatch__name">Wall Tile</span><span class="swatch__meta">11 options</span></figcaption></figure>
+        <figure class="swatch"><img src="assets/img/lux-showerfloor-lucia-pebble.jpg" alt="Lucia Pebble tumbled marble mosaic" loading="lazy"><figcaption><span class="swatch__name">Shower Floor</span><span class="swatch__meta">9 mosaics</span></figcaption></figure>
+        <figure class="swatch"><img src="assets/img/lvp-alamo-oak.jpg" alt="Alamo Oak luxury vinyl plank" loading="lazy"><figcaption><span class="swatch__name">Flooring</span><span class="swatch__meta">4 LVP</span></figcaption></figure>
+        <figure class="swatch"><img src="assets/img/paint-pavilion-beige.jpg" alt="Pavilion Beige interior paint" loading="lazy"><figcaption><span class="swatch__name">Paint</span><span class="swatch__meta">6 neutrals</span></figcaption></figure>
+      </div>
+
+      <p class="callout" data-reveal><strong>Three tiers</strong> Essential is clean, timeless and rental-ready. Signature is our house look, with handmade zellige and warm ivories. Luxury is marble, fluted profiles and statement patterning. You can mix across tiers in any category.</p>
+
+      <div class="btn-row mt-6" style="margin-top:2.5rem;justify-content:center;" data-reveal>
+        <a class="btn" href="kitchen-remodeling.html#finishes">Kitchen Finishes</a>
+        <a class="btn btn--ghost" href="bathroom-remodeling.html#finishes">Bathroom Finishes</a>
       </div>
     </div>
   </section>
@@ -228,35 +261,35 @@
   <!-- ===== Why us ===== -->
   <section class="section section--dark">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <p class="eyebrow eyebrow--light">Why homeowners pick us</p>
         <h2>The parts of remodeling people actually complain about</h2>
         <p class="lede">Surprise change orders, crews that vanish for a week, and a bathroom that is unusable for a month. We built the process around those three things.</p>
       </div>
 
       <div class="grid grid--4">
-        <div class="value">
+        <div class="value" data-reveal>
           <div class="value__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg>
           </div>
           <h4>One written price</h4>
           <p>You get a line-item quote before demo starts. If we hit something behind the wall, we show you the photo and the cost before we touch it.</p>
         </div>
-        <div class="value">
+        <div class="value" data-reveal>
           <div class="value__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
           </div>
           <h4>A real schedule</h4>
           <p>Start date, install days and finish date in writing. You get a named project lead and their direct number, not a general voicemail box.</p>
         </div>
-        <div class="value">
+        <div class="value" data-reveal>
           <div class="value__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
           <h4>Licensed and insured</h4>
           <p>Permits pulled where required. Certificate of insurance provided on request, before the first day of work.</p>
         </div>
-        <div class="value">
+        <div class="value" data-reveal>
           <div class="value__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg>
           </div>
@@ -270,24 +303,24 @@
   <!-- ===== Process ===== -->
   <section class="section">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <p class="eyebrow">How it works</p>
         <h2>Four steps, no mystery</h2>
       </div>
       <div class="grid grid--4 steps">
-        <div class="step">
+        <div class="step" data-reveal>
           <h4>Free in-home consultation</h4>
           <p>We measure, look at what is behind the walls where we can, and talk budget honestly before anyone draws anything.</p>
         </div>
-        <div class="step">
+        <div class="step" data-reveal>
           <h4>Design &amp; fixed quote</h4>
           <p>You see a layout, finish selections and a line-item price. Revise it as many times as you want. Nothing is owed yet.</p>
         </div>
-        <div class="step">
+        <div class="step" data-reveal>
           <h4>Install</h4>
           <p>Protection goes down, demo happens, and the crew works consecutive days until it is done. No week-long gaps.</p>
         </div>
-        <div class="step">
+        <div class="step" data-reveal>
           <h4>Walkthrough &amp; warranty</h4>
           <p>We walk it with you, fix the punch list, and hand over written warranty documents and care instructions.</p>
         </div>
@@ -298,7 +331,7 @@
   <!-- ===== Gallery ===== -->
   <section class="section section--cream">
     <div class="wrap">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center" data-reveal>
         <p class="eyebrow">Recent work</p>
         <h2>Projects from around Houston</h2>
         <p class="lede">A sample of recent kitchen and bath work across Houston, Katy, Sugar Land and The Woodlands.</p>
@@ -323,38 +356,6 @@
     </div>
   </section>
 
-  <!-- ===== Testimonials ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head section-head--center">
-        <p class="eyebrow">Reviews</p>
-        <h2>What homeowners say</h2>
-      </div>
-
-      <!-- SAMPLE COPY: these three reviews are written for the demo and are not real
-           customers. Replace each with a verbatim, verifiable review before launch and
-           link it to its source. -->
-
-      <div class="grid grid--3">
-        <figure class="quote">
-          <div class="quote__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>They gave us a start date and a finish date and hit both. The kitchen was usable again on day nineteen, exactly like the schedule said. I have remodeled twice before and that has never happened.</blockquote>
-          <figcaption><strong>Marisol R.</strong>Oak Forest &middot; Kitchen remodel &middot; Google review</figcaption>
-        </figure>
-        <figure class="quote">
-          <div class="quote__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>They found rotted subfloor under the old tub. Instead of just billing me, the lead texted me photos, gave me a written price the same afternoon, and waited for me to approve it. That is the whole reason I would use them again.</blockquote>
-          <figcaption><strong>Danny W.</strong>Katy &middot; Primary bath remodel &middot; Google review</figcaption>
-        </figure>
-        <figure class="quote">
-          <div class="quote__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>My mother needed a walk-in shower after her hip surgery. Three days, start to finish, and they put blocking in the walls for grab bars we had not even bought yet. Clean job, clean house.</blockquote>
-          <figcaption><strong>Yolanda P.</strong>Sugar Land &middot; Tub-to-shower conversion &middot; Houzz review</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== Offer band ===== -->
   <section class="band">
     <div class="wrap">
@@ -369,7 +370,7 @@
   <!-- ===== FAQ ===== -->
   <section class="section">
     <div class="wrap wrap--narrow">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <p class="eyebrow">Common questions</p>
         <h2>Before you call</h2>
       </div>
@@ -377,7 +378,7 @@
       <div class="faq">
         <details>
           <summary>What does a remodel actually cost?</summary>
-          <div class="faq__answer">Bathrooms typically run $14,000 to $65,000 depending on size and whether the layout changes. Kitchens run $12,000 for a refresh up to $160,000 for a full reconfiguration. The variables are plumbing moves, cabinet line and countertop material. We publish our full ranges on the <a href="services.html#pricing">pricing section</a> and give you a line-item written price after the in-home visit.</div>
+          <div class="faq__answer">Bathrooms typically run $14,000 to $65,000 depending on size and whether the layout changes. Kitchens run $12,000 for a refresh up to $160,000 for a full reconfiguration. The variables are plumbing moves, cabinet line and countertop material. Full ranges are published on the <a href="kitchen-remodeling.html#pricing">kitchen pricing</a> and <a href="bathroom-remodeling.html#pricing">bathroom pricing</a> sections, and you get a line-item written price after the in-home visit.</div>
         </details>
         <details>
           <summary>How long will my house be torn up?</summary>
@@ -471,10 +472,10 @@
     <div class="footer__grid">
       <div>
         <a class="brand" href="index.html">
-          <span class="brand__mark" aria-hidden="true">SS</span>
+          <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
           <span>
-            <span class="brand__name">Super Speed Homer Buyers</span>
-            <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+            <span class="brand__name">Super Speed Remodeling</span>
+            <span class="brand__tag">Speed You Can Trust</span>
           </span>
         </a>
         <p>9601 Katy Freeway, Suite 210<br>Houston, TX 77024</p>
@@ -491,11 +492,11 @@
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
-          <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
-          <li><a href="services.html#specialty">Tub-to-Shower</a></li>
-          <li><a href="services.html#specialty">Countertops</a></li>
-          <li><a href="services.html#specialty">Accessible Bathrooms</a></li>
+          <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="kitchen-remodeling.html#specialty">Countertops &amp; Cabinetry</a></li>
+          <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+          <li><a href="bathroom-remodeling.html#specialty">Tub-to-Shower Conversion</a></li>
+          <li><a href="bathroom-remodeling.html#accessible">Accessible Bathrooms</a></li>
         </ul>
       </div>
 
@@ -503,10 +504,10 @@
         <h4>Company</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html#process">Our Process</a></li>
-          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="kitchen-remodeling.html#process">Our Process</a></li>
+          <li><a href="kitchen-remodeling.html#pricing">Kitchen Pricing</a></li>
+          <li><a href="bathroom-remodeling.html#pricing">Bathroom Pricing</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#areas">Service Area</a></li>
         </ul>
       </div>
 
@@ -518,7 +519,7 @@
     </div>
 
     <div class="footer__legal">
-      <span>&copy; 2026 Super Speed Homer Buyers. All rights reserved.</span>
+      <span>&copy; 2026 Super Speed Remodeling. All rights reserved.</span>
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
@@ -527,7 +528,7 @@
       </ul>
     </div>
 
-    <p class="footer__disclaimer"><strong>Demo site.</strong> Super Speed Homer Buyers is a fictional company. Every name, address, phone number, license number, statistic, review, price and offer shown here is sample data for layout purposes and does not describe a real business. Photography is hotlinked from Unsplash and Pexels for comping only and is not licensed for production use.</p>
+    <p class="footer__disclaimer"><strong>Demo site.</strong> Super Speed Remodeling is a fictional company. Every name, address, phone number, license number, statistic, review, price and offer shown here is sample data for layout purposes and does not describe a real business. Photography is hotlinked from Unsplash and Pexels for comping only and is not licensed for production use.</p>
   </div>
 </footer>
 

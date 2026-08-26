@@ -3,19 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact Us &amp; Book a Free Consultation | Super Speed Homer Buyers</title>
+<title>Contact Us &amp; Book a Free Consultation | Super Speed Remodeling</title>
 <meta name="description" content="Book a free in-home kitchen or bathroom remodeling consultation in Greater Houston. Call (713) 555-0142 or send us your project details and photos.">
 <link rel="canonical" href="https://www.superspeedremodel.com/contact.html">
 
 <!-- =============================================================================
-     DEMO SITE - Super Speed Homer Buyers (fictional company)
+     SUPER SPEED REMODELING
 
-     All names, addresses, phone numbers, license numbers, statistics, reviews,
-     prices, timelines and offers are SAMPLE DATA written for layout purposes.
-     Nothing here describes a real business. Review every fact before launch.
+     BRAND (from the client's Finish Selection Package PDF)
+       Logo    assets/img/logo-mark.png  (504x507, transparent)
+       Green   #0D2E22   Cream #F7F4ED   Gold #C9A65C / #E2CB94
+       Type    Playfair Display (display) + Jost (UI) - both Google Fonts
+       Finish swatches in assets/img/ are extracted from the same PDF.
 
-     Phone numbers use the reserved 555-01XX fictional range on purpose.
-     Photos hotlink to Unsplash/Pexels for comping only, not licensed for production.
+     STILL SAMPLE DATA - replace before launch:
+       address, phone (reserved 555-01XX range), license numbers, stats,
+       prices, timelines, promotional offer.
+     Interior/lifestyle photos hotlink to Unsplash/Pexels for comping only.
 
      BUILD TARGET: Webflow. Forms will be replaced by GoHighLevel embeds.
      See the "GHL SWAP POINT" comments around each <form> element.
@@ -28,7 +32,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -47,17 +51,18 @@
 <header class="header" id="siteHeader">
   <div class="wrap">
     <a class="brand" href="index.html">
-      <span class="brand__mark" aria-hidden="true">SS</span>
+      <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
       <span>
-        <span class="brand__name">Super Speed Homer Buyers</span>
-        <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+        <span class="brand__name">Super Speed Remodeling</span>
+        <span class="brand__tag">Speed You Can Trust</span>
       </span>
     </a>
 
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="kitchen-remodeling.html">Kitchens</a></li>
+        <li><a href="bathroom-remodeling.html">Bathrooms</a></li>
         <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
       <div class="nav__mobile-cta">
@@ -86,6 +91,7 @@
   <!-- ===== Page hero ===== -->
   <section class="hero hero--page">
     <img class="hero__bg" src="https://images.pexels.com/photos/8089092/pexels-photo-8089092.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1900" alt="" aria-hidden="true">
+    <div class="hero__frame" aria-hidden="true"></div>
     <div class="wrap">
       <div class="hero__inner">
         <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -229,15 +235,15 @@
           <div class="infocard">
             <h3>What happens next</h3>
             <div class="grid steps" style="gap:1.5rem;">
-              <div class="step">
+              <div class="step" data-reveal>
                 <h4>We call you back</h4>
                 <p>Within one business day, to ask a few questions and confirm we serve your area.</p>
               </div>
-              <div class="step">
+              <div class="step" data-reveal>
                 <h4>We book the visit</h4>
                 <p>A time that works for you, including evenings and Saturdays.</p>
               </div>
-              <div class="step">
+              <div class="step" data-reveal>
                 <h4>You get a written quote</h4>
                 <p>Line-item pricing and a layout direction. No deposit required to receive it.</p>
               </div>
@@ -252,7 +258,7 @@
   <!-- ===== Map ===== -->
   <section class="section section--tight section--cream">
     <div class="wrap">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center" data-reveal>
         <p class="eyebrow">Find us</p>
         <h2>Our Houston office</h2>
       </div>
@@ -269,7 +275,7 @@
   <!-- ===== Service area ===== -->
   <section class="section" id="areas">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <p class="eyebrow">Coverage</p>
         <h2>Where we work</h2>
         <p class="lede">Greater Houston and the surrounding counties. If your city is not listed, call us anyway. We take projects just outside the boundary depending on scope and schedule.</p>
@@ -309,7 +315,7 @@
   <!-- ===== Short FAQ ===== -->
   <section class="section section--tight">
     <div class="wrap wrap--narrow">
-      <div class="section-head">
+      <div class="section-head" data-reveal>
         <p class="eyebrow">Before you book</p>
         <h2>Quick answers</h2>
       </div>
@@ -352,10 +358,10 @@
     <div class="footer__grid">
       <div>
         <a class="brand" href="index.html">
-          <span class="brand__mark" aria-hidden="true">SS</span>
+          <img class="brand__mark" src="assets/img/logo-mark.png" alt="" width="46" height="46" aria-hidden="true">
           <span>
-            <span class="brand__name">Super Speed Homer Buyers</span>
-            <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+            <span class="brand__name">Super Speed Remodeling</span>
+            <span class="brand__tag">Speed You Can Trust</span>
           </span>
         </a>
         <p>9601 Katy Freeway, Suite 210<br>Houston, TX 77024</p>
@@ -372,11 +378,11 @@
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
-          <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
-          <li><a href="services.html#specialty">Tub-to-Shower</a></li>
-          <li><a href="services.html#specialty">Countertops</a></li>
-          <li><a href="services.html#specialty">Accessible Bathrooms</a></li>
+          <li><a href="kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="kitchen-remodeling.html#specialty">Countertops &amp; Cabinetry</a></li>
+          <li><a href="bathroom-remodeling.html">Bathroom Remodeling</a></li>
+          <li><a href="bathroom-remodeling.html#specialty">Tub-to-Shower Conversion</a></li>
+          <li><a href="bathroom-remodeling.html#accessible">Accessible Bathrooms</a></li>
         </ul>
       </div>
 
@@ -384,10 +390,10 @@
         <h4>Company</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html#process">Our Process</a></li>
-          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="kitchen-remodeling.html#process">Our Process</a></li>
+          <li><a href="kitchen-remodeling.html#pricing">Kitchen Pricing</a></li>
+          <li><a href="bathroom-remodeling.html#pricing">Bathroom Pricing</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#areas">Service Area</a></li>
         </ul>
       </div>
 
@@ -399,7 +405,7 @@
     </div>
 
     <div class="footer__legal">
-      <span>&copy; 2026 Super Speed Homer Buyers. All rights reserved.</span>
+      <span>&copy; 2026 Super Speed Remodeling. All rights reserved.</span>
       <ul>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
@@ -408,7 +414,7 @@
       </ul>
     </div>
 
-    <p class="footer__disclaimer"><strong>Demo site.</strong> Super Speed Homer Buyers is a fictional company. Every name, address, phone number, license number, statistic, review, price and offer shown here is sample data for layout purposes and does not describe a real business. Photography is hotlinked from Unsplash and Pexels for comping only and is not licensed for production use.</p>
+    <p class="footer__disclaimer"><strong>Demo site.</strong> Super Speed Remodeling is a fictional company. Every name, address, phone number, license number, statistic, review, price and offer shown here is sample data for layout purposes and does not describe a real business. Photography is hotlinked from Unsplash and Pexels for comping only and is not licensed for production use.</p>
   </div>
 </footer>
 
