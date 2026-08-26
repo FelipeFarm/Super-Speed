@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitchen &amp; Bathroom Remodeling in Houston, TX | Super Speed Homer Buyers</title>
+<meta name="description" content="Super Speed Homer Buyers designs and installs kitchen and bathroom remodels across Greater Houston. Free in-home design consultation, fixed written pricing, most installs finished in days.">
+<link rel="canonical" href="https://www.superspeedremodel.com/">
+
+<!-- =============================================================================
+     DEMO SITE - Super Speed Homer Buyers (fictional company)
+
+     All names, addresses, phone numbers, license numbers, statistics, reviews,
+     prices, timelines and offers are SAMPLE DATA written for layout purposes.
+     Nothing here describes a real business. Review every fact before launch.
+
+     Phone numbers use the reserved 555-01XX fictional range on purpose.
+     Photos hotlink to Unsplash/Pexels for comping only, not licensed for production.
+
+     BUILD TARGET: Webflow. Forms will be replaced by GoHighLevel embeds.
+     See the "GHL SWAP POINT" comments around each <form> element.
+============================================================================= -->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kitchen &amp; Bathroom Remodeling in Houston, TX">
+<meta property="og:description" content="Free in-home design consultation. Fixed written pricing. Most installs finished in days, not weeks.">
+<meta property="og:url" content="https://www.superspeedremodel.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===== Utility bar ===== -->
+<div class="utility">
+  <div class="wrap">
+    <span>Serving Greater Houston<span class="utility__license"> &middot; TX RMP #41827 &middot; TACLB #88214</span></span>
+    <div class="utility__meta">
+      <span>Mon&ndash;Fri 8am&ndash;6pm &middot; Sat by appointment</span>
+      <a href="tel:+17135550142">(713) 555-0142</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">SS</span>
+      <span>
+        <span class="brand__name">Super Speed Homer Buyers</span>
+        <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__mobile-cta">
+        <a class="btn btn--block" href="contact.html">Book Free Consultation</a>
+        <a class="btn btn--ghost btn--block" href="tel:+17135550142">Call (713) 555-0142</a>
+      </div>
+    </nav>
+
+    <div class="header__cta">
+      <a class="header__phone" href="tel:+17135550142">
+        <small>Call for a free quote</small>
+        <strong>(713) 555-0142</strong>
+      </a>
+      <a class="btn" href="contact.html">Free Consultation</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Toggle navigation</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero hero--home">
+    <img class="hero__bg" src="https://images.unsplash.com/photo-1682888813913-e13f18692019?auto=format&amp;fit=crop&amp;w=1900&amp;q=70" alt="" aria-hidden="true" fetchpriority="high">
+    <div class="wrap">
+      <div class="hero__inner">
+        <p class="eyebrow eyebrow--light">Houston &amp; surrounding counties</p>
+        <h1>Kitchens and bathrooms, done right the first time.</h1>
+        <p class="hero__sub">Design, demo, and install handled by one crew under one written price. Most bathrooms finish in days. Most kitchens in weeks, not months.</p>
+        <div class="btn-row">
+          <a class="btn btn--lg" href="#quote">Get My Free Design Quote</a>
+          <a class="btn btn--lg btn--onDark" href="services.html">See What We Do</a>
+        </div>
+        <ul class="hero__ticks">
+          <li>Free in-home design visit</li>
+          <li>Fixed written pricing</li>
+          <li>Licensed &amp; insured</li>
+          <li>Financing available</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Quick-start form ===== -->
+  <section class="quickstart" id="quote">
+    <div class="wrap">
+      <div class="quickstart__card">
+        <p class="quickstart__title">Start here. Two questions and a callback within one business day.</p>
+        <!-- GHL SWAP POINT (quickstart__row) - Hero quick-capture (3 fields). In Webflow: keep the .quickstart__card wrapper and drop the GHL embed inside it. -->
+            <form class="quickstart__row" id="quickForm" novalidate>
+          <div class="field">
+            <label for="q-service">What are you remodeling? <span class="req">*</span></label>
+            <select id="q-service" name="service" required>
+              <option value="">Select one</option>
+              <option>Kitchen</option>
+              <option>Bathroom</option>
+              <option>Both kitchen and bathroom</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="q-zip">ZIP code <span class="req">*</span></label>
+            <input type="text" id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" placeholder="77002" required>
+          </div>
+          <div class="field">
+            <label for="q-phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="q-phone" name="phone" autocomplete="tel" placeholder="(713) 555-0142" required>
+          </div>
+          <div class="field">
+            <label for="q-submit" class="visually-hidden">Submit</label>
+            <button class="btn btn--block" id="q-submit" type="submit">Check Availability</button>
+          </div>
+        </form>
+            <!-- END GHL SWAP POINT (quickstart__row) -->
+        <p class="form-status" id="quickStatus" role="status"></p>
+        <p class="form-note mt-5">No obligation. We do not sell your information. <a href="contact.html">Prefer the full form?</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trust bar ===== -->
+  <section class="trustbar" aria-label="Company facts">
+    <div class="wrap">
+      <div class="trustbar__item">
+        <span class="trustbar__num">2,400+</span>
+        <span class="trustbar__label">Houston-area homes remodeled</span>
+      </div>
+      <div class="trustbar__item">
+        <span class="trustbar__num">4.9&#9733;</span>
+        <span class="trustbar__label">Average of 380+ reviews</span>
+      </div>
+      <div class="trustbar__item">
+        <span class="trustbar__num">18 yrs</span>
+        <span class="trustbar__label">Serving Greater Houston</span>
+      </div>
+      <div class="trustbar__item">
+        <span class="trustbar__num">10 yr</span>
+        <span class="trustbar__label">Workmanship warranty</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">What we do</p>
+        <h2>Two rooms. All of the work.</h2>
+        <p class="lede">We do not subcontract the job out and disappear. The same team that draws your layout is the team that sets your tile.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card card--feature">
+          <div class="card__media">
+            <img src="https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Remodeled kitchen with white cabinetry and a large island" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Kitchen Remodeling</h3>
+            <p>Full gut renovations, cabinet refacing, island builds, countertop and backsplash replacement, lighting and electrical updates, and layout changes that open the room up.</p>
+            <a class="link-arrow" href="services.html#kitchens">Explore kitchen remodeling</a>
+          </div>
+        </article>
+
+        <article class="card card--feature">
+          <div class="card__media">
+            <img src="https://images.pexels.com/photos/6957081/pexels-photo-6957081.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Modern remodeled bathroom with a glass walk-in shower" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Bathroom Remodeling</h3>
+            <p>Full bathroom rebuilds, tub-to-shower conversions, walk-in showers, vanity and tile replacement, and accessible bathrooms built for aging in place.</p>
+            <a class="link-arrow" href="services.html#bathrooms">Explore bathroom remodeling</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid grid--3 mt-5">
+        <article class="card">
+          <div class="card__body">
+            <h4>Tub-to-Shower Conversions</h4>
+            <p>Swap an unused tub for a low-threshold walk-in shower. Typically a two to three day install.</p>
+            <a class="link-arrow" href="services.html#specialty">Details</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h4>Countertops &amp; Cabinetry</h4>
+            <p>Quartz, granite and solid surface fabrication, plus refacing when the boxes are still sound.</p>
+            <a class="link-arrow" href="services.html#specialty">Details</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h4>Accessible &amp; Aging-in-Place</h4>
+            <p>Grab bars, curbless entries, comfort-height fixtures and turning clearances that actually work.</p>
+            <a class="link-arrow" href="services.html#specialty">Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why us ===== -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--light">Why homeowners pick us</p>
+        <h2>The parts of remodeling people actually complain about</h2>
+        <p class="lede">Surprise change orders, crews that vanish for a week, and a bathroom that is unusable for a month. We built the process around those three things.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg>
+          </div>
+          <h4>One written price</h4>
+          <p>You get a line-item quote before demo starts. If we hit something behind the wall, we show you the photo and the cost before we touch it.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h4>A real schedule</h4>
+          <p>Start date, install days and finish date in writing. You get a named project lead and their direct number, not a general voicemail box.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h4>Licensed and insured</h4>
+          <p>Permits pulled where required. Certificate of insurance provided on request, before the first day of work.</p>
+        </div>
+        <div class="value">
+          <div class="value__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg>
+          </div>
+          <h4>Your house, respected</h4>
+          <p>Floor protection, dust barriers, daily cleanup and a dumpster that does not sit on your lawn for three weeks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Process ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Four steps, no mystery</h2>
+      </div>
+      <div class="grid grid--4 steps">
+        <div class="step">
+          <h4>Free in-home consultation</h4>
+          <p>We measure, look at what is behind the walls where we can, and talk budget honestly before anyone draws anything.</p>
+        </div>
+        <div class="step">
+          <h4>Design &amp; fixed quote</h4>
+          <p>You see a layout, finish selections and a line-item price. Revise it as many times as you want. Nothing is owed yet.</p>
+        </div>
+        <div class="step">
+          <h4>Install</h4>
+          <p>Protection goes down, demo happens, and the crew works consecutive days until it is done. No week-long gaps.</p>
+        </div>
+        <div class="step">
+          <h4>Walkthrough &amp; warranty</h4>
+          <p>We walk it with you, fix the punch list, and hand over written warranty documents and care instructions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section section--cream">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Recent work</p>
+        <h2>Projects from around Houston</h2>
+        <p class="lede">A sample of recent kitchen and bath work across Houston, Katy, Sugar Land and The Woodlands.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__wide gallery__tall">
+          <img src="https://images.unsplash.com/photo-1609347744403-2306e8a9ae27?auto=format&amp;fit=crop&amp;w=1000&amp;q=70" alt="Kitchen remodel with marble island and pendant lighting" loading="lazy">
+        </figure>
+        <figure>
+          <img src="https://images.pexels.com/photos/7031840/pexels-photo-7031840.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Bathroom with tiled walk-in shower" loading="lazy">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1683917067889-c88599491d5c?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Kitchen with dark cabinetry" loading="lazy">
+        </figure>
+        <figure>
+          <img src="https://images.pexels.com/photos/8082195/pexels-photo-8082195.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=700" alt="Bathroom vanity with stone countertop" loading="lazy">
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1571843439991-dd2b8e051966?auto=format&amp;fit=crop&amp;w=700&amp;q=70" alt="Kitchen with a large center island" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Reviews</p>
+        <h2>What homeowners say</h2>
+      </div>
+
+      <!-- SAMPLE COPY: these three reviews are written for the demo and are not real
+           customers. Replace each with a verbatim, verifiable review before launch and
+           link it to its source. -->
+
+      <div class="grid grid--3">
+        <figure class="quote">
+          <div class="quote__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>They gave us a start date and a finish date and hit both. The kitchen was usable again on day nineteen, exactly like the schedule said. I have remodeled twice before and that has never happened.</blockquote>
+          <figcaption><strong>Marisol R.</strong>Oak Forest &middot; Kitchen remodel &middot; Google review</figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="quote__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>They found rotted subfloor under the old tub. Instead of just billing me, the lead texted me photos, gave me a written price the same afternoon, and waited for me to approve it. That is the whole reason I would use them again.</blockquote>
+          <figcaption><strong>Danny W.</strong>Katy &middot; Primary bath remodel &middot; Google review</figcaption>
+        </figure>
+        <figure class="quote">
+          <div class="quote__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>My mother needed a walk-in shower after her hip surgery. Three days, start to finish, and they put blocking in the walls for grab bars we had not even bought yet. Clean job, clean house.</blockquote>
+          <figcaption><strong>Yolanda P.</strong>Sugar Land &middot; Tub-to-shower conversion &middot; Houzz review</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Offer band ===== -->
+  <section class="band">
+    <div class="wrap">
+      <div>
+        <h2>$1,500 off a complete kitchen or bathroom remodel</h2>
+        <p>Book your free consultation by October 31, 2026 and mention this offer. Applies to projects of $15,000 or more, signed within 30 days of quote. Cannot be combined with other offers.</p>
+      </div>
+      <a class="btn btn--lg" href="contact.html">Claim This Offer</a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <div class="section-head">
+        <p class="eyebrow">Common questions</p>
+        <h2>Before you call</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>What does a remodel actually cost?</summary>
+          <div class="faq__answer">Bathrooms typically run $14,000 to $65,000 depending on size and whether the layout changes. Kitchens run $12,000 for a refresh up to $160,000 for a full reconfiguration. The variables are plumbing moves, cabinet line and countertop material. We publish our full ranges on the <a href="services.html#pricing">pricing section</a> and give you a line-item written price after the in-home visit.</div>
+        </details>
+        <details>
+          <summary>How long will my house be torn up?</summary>
+          <div class="faq__answer">A tub-to-shower conversion is 2 to 3 working days. A guest bathroom is 5 to 8. A primary bathroom is 2 to 3 weeks. Kitchens run 1 to 2 weeks for a refresh and 3 to 5 weeks for a full replacement, driven mostly by cabinet and countertop lead times. We order and stage everything before demo day so the crew is never sitting idle waiting on a delivery.</div>
+        </details>
+        <details>
+          <summary>Do you handle permits?</summary>
+          <div class="faq__answer">Yes. We pull permits in the City of Houston and in Harris, Fort Bend, Montgomery and Brazoria counties, and we schedule the inspections. Permits are included in your quoted price. Cosmetic work that does not move plumbing, gas or electrical usually does not require one, and we will tell you which category your project falls into at the consultation.</div>
+        </details>
+        <details>
+          <summary>Is financing available?</summary>
+          <div class="faq__answer">Yes. We offer 0% interest for 18 months on approved credit, and fixed-rate terms out to 120 months for larger projects, through our lending partners. Pre-approval takes a few minutes and does not affect your quote. Financing is subject to credit approval, and terms are disclosed in writing before you sign anything.</div>
+        </details>
+        <details>
+          <summary>What does the warranty cover?</summary>
+          <div class="faq__answer">Two separate warranties. Materials carry the manufacturer&rsquo;s own warranty, which varies by product and is listed in your paperwork. Our labor and workmanship carry a 10 year written warranty, including waterproofing and tile installation. Both documents are handed over at the final walkthrough, not mailed later.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Final CTA ===== -->
+  <section class="section section--cream">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2>Book the free in-home consultation</h2>
+          <p class="lede">One visit, roughly an hour. You get measurements, a layout direction and a real budget conversation. No deposit, no pressure to sign anything that day.</p>
+          <ul class="checklist mt-6">
+            <li>We come to you, evenings and Saturdays included</li>
+            <li>Written line-item quote, not a verbal ballpark</li>
+            <li>Quote is good for a stated number of days</li>
+          </ul>
+        </div>
+        <div class="formcard">
+          <h3>Request your consultation</h3>
+          <!-- GHL SWAP POINT (homeForm) - Home page bottom form. In Webflow: keep the .formcard wrapper and its <h3>, replace the <form> with the GHL embed. -->
+            <form id="homeForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="h-first">First name <span class="req">*</span></label>
+                <input type="text" id="h-first" name="first" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="h-last">Last name <span class="req">*</span></label>
+                <input type="text" id="h-last" name="last" autocomplete="family-name" required>
+              </div>
+              <div class="field">
+                <label for="h-email">Email <span class="req">*</span></label>
+                <input type="email" id="h-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="h-tel">Phone <span class="req">*</span></label>
+                <input type="tel" id="h-tel" name="phone" autocomplete="tel" required>
+              </div>
+              <div class="field field--full">
+                <label for="h-project">Project type <span class="req">*</span></label>
+                <select id="h-project" name="project" required>
+                  <option value="">Select one</option>
+                  <option>Kitchen remodel</option>
+                  <option>Bathroom remodel</option>
+                  <option>Tub-to-shower conversion</option>
+                  <option>Countertops or cabinetry only</option>
+                  <option>Accessible / aging-in-place</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label class="consent" for="h-consent">
+                  <input type="checkbox" id="h-consent" name="consent">
+                  <span>I agree to be contacted by phone, text or email about my project. Message and data rates may apply. Consent is not a condition of purchase.</span>
+                </label>
+              </div>
+            </div>
+            <button class="btn btn--lg btn--block mt-5" type="submit">Book My Free Consultation</button>
+            <p class="form-status" id="homeStatus" role="status"></p>
+            <p class="form-note mt-5">Or call <a href="tel:+17135550142">(713) 555-0142</a>. We answer during business hours.</p>
+          </form>
+            <!-- END GHL SWAP POINT (homeForm) -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">SS</span>
+          <span>
+            <span class="brand__name">Super Speed Homer Buyers</span>
+            <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+          </span>
+        </a>
+        <p>9601 Katy Freeway, Suite 210<br>Houston, TX 77024</p>
+        <p><a href="tel:+17135550142">(713) 555-0142</a><br><a href="mailto:hello@superspeedremodel.com">hello@superspeedremodel.com</a></p>
+        <p>TX RMP #41827 &middot; TACLB #88214</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.8-.1zm0 3.4A6.4 6.4 0 1 0 18.4 12 6.4 6.4 0 0 0 12 5.6zm0 10.5A4.1 4.1 0 1 1 16.1 12 4.1 4.1 0 0 1 12 16.1zm6.6-10.7a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5z"/></svg></a>
+          <a href="#" aria-label="Houzz"><svg viewBox="0 0 24 24"><path d="M7 2v6.5L17 12v10h-4v-5.5H11V22H7V2z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.4-.4-5a2.6 2.6 0 0 0-1.8-1.8C19.1 4.8 12 4.8 12 4.8s-7.1 0-8.8.4A2.6 2.6 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.6 2.6 0 0 0 1.8 1.8c1.7.4 8.8.4 8.8.4s7.1 0 8.8-.4a2.6 2.6 0 0 0 1.8-1.8c.4-1.6.4-5 .4-5zM9.8 15.3V8.7l5.9 3.3z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
+          <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
+          <li><a href="services.html#specialty">Tub-to-Shower</a></li>
+          <li><a href="services.html#specialty">Countertops</a></li>
+          <li><a href="services.html#specialty">Accessible Bathrooms</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html#process">Our Process</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#areas">Service Area</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Service area</h4>
+        <p>Houston, Katy, Sugar Land, Pearland, The Woodlands, Cypress, Spring, Kingwood, Missouri City, League City, Baytown, Conroe and nearby communities.</p>
+        <a class="link-arrow" href="contact.html#areas">See the full list</a>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>&copy; 2026 Super Speed Homer Buyers. All rights reserved.</span>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <p class="footer__disclaimer"><strong>Demo site.</strong> Super Speed Homer Buyers is a fictional company. Every name, address, phone number, license number, statistic, review, price and offer shown here is sample data for layout purposes and does not describe a real business. Photography is hotlinked from Unsplash and Pexels for comping only and is not licensed for production use.</p>
+  </div>
+</footer>
+
+<!-- ===== Sticky mobile bar ===== -->
+<div class="mobilebar">
+  <a class="btn btn--ghost" href="tel:+17135550142">Call Now</a>
+  <a class="btn" href="contact.html">Free Quote</a>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

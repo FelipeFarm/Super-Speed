@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us &amp; Book a Free Consultation | Super Speed Homer Buyers</title>
+<meta name="description" content="Book a free in-home kitchen or bathroom remodeling consultation in Greater Houston. Call (713) 555-0142 or send us your project details and photos.">
+<link rel="canonical" href="https://www.superspeedremodel.com/contact.html">
+
+<!-- =============================================================================
+     DEMO SITE - Super Speed Homer Buyers (fictional company)
+
+     All names, addresses, phone numbers, license numbers, statistics, reviews,
+     prices, timelines and offers are SAMPLE DATA written for layout purposes.
+     Nothing here describes a real business. Review every fact before launch.
+
+     Phone numbers use the reserved 555-01XX fictional range on purpose.
+     Photos hotlink to Unsplash/Pexels for comping only, not licensed for production.
+
+     BUILD TARGET: Webflow. Forms will be replaced by GoHighLevel embeds.
+     See the "GHL SWAP POINT" comments around each <form> element.
+============================================================================= -->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Us &amp; Book a Free Consultation">
+<meta property="og:description" content="Free in-home consultation across Greater Houston.">
+<meta property="og:url" content="https://www.superspeedremodel.com/contact.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="utility">
+  <div class="wrap">
+    <span>Serving Greater Houston<span class="utility__license"> &middot; TX RMP #41827 &middot; TACLB #88214</span></span>
+    <div class="utility__meta">
+      <span>Mon&ndash;Fri 8am&ndash;6pm &middot; Sat by appointment</span>
+      <a href="tel:+17135550142">(713) 555-0142</a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">SS</span>
+      <span>
+        <span class="brand__name">Super Speed Homer Buyers</span>
+        <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="nav__mobile-cta">
+        <a class="btn btn--block" href="#book">Book Free Consultation</a>
+        <a class="btn btn--ghost btn--block" href="tel:+17135550142">Call (713) 555-0142</a>
+      </div>
+    </nav>
+
+    <div class="header__cta">
+      <a class="header__phone" href="tel:+17135550142">
+        <small>Call for a free quote</small>
+        <strong>(713) 555-0142</strong>
+      </a>
+      <a class="btn" href="#book">Free Consultation</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+      <span class="visually-hidden">Toggle navigation</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== Page hero ===== -->
+  <section class="hero hero--page">
+    <img class="hero__bg" src="https://images.pexels.com/photos/8089092/pexels-photo-8089092.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1900" alt="" aria-hidden="true">
+    <div class="wrap">
+      <div class="hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span>Contact
+        </nav>
+        <h1>Book your free in-home consultation</h1>
+        <p class="hero__sub">One visit, about an hour, no deposit and no pressure to sign that day. Fill out the form or call us during business hours and a person picks up.</p>
+        <ul class="hero__ticks">
+          <li>Reply within one business day</li>
+          <li>Evening and Saturday visits</li>
+          <li>Written quote, not a ballpark</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Form + details ===== -->
+  <section class="section" id="book">
+    <div class="wrap">
+      <div class="split" style="align-items:start;">
+
+        <!-- Form -->
+        <div class="formcard">
+          <h2 style="font-size:1.65rem;">Tell us about your project</h2>
+          <p class="form-note" style="margin-bottom:1.5rem;">The more detail you give us, the more useful the first visit is. Fields marked <span class="req">*</span> are required.</p>
+
+          <!-- GHL SWAP POINT (contactForm) - Primary contact form. In Webflow: keep the .formcard wrapper, replace the <form> with the GHL embed. Match GHL field names to the ids used here so hidden UTM/source fields map cleanly. -->
+            <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="c-first">First name <span class="req">*</span></label>
+                <input type="text" id="c-first" name="first" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="c-last">Last name <span class="req">*</span></label>
+                <input type="text" id="c-last" name="last" autocomplete="family-name" required>
+              </div>
+              <div class="field">
+                <label for="c-email">Email <span class="req">*</span></label>
+                <input type="email" id="c-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="c-tel">Phone <span class="req">*</span></label>
+                <input type="tel" id="c-tel" name="phone" autocomplete="tel" required>
+              </div>
+              <div class="field">
+                <label for="c-city">City <span class="req">*</span></label>
+                <input type="text" id="c-city" name="city" autocomplete="address-level2" placeholder="Houston" required>
+              </div>
+              <div class="field">
+                <label for="c-zip">ZIP code <span class="req">*</span></label>
+                <input type="text" id="c-zip" name="zip" inputmode="numeric" autocomplete="postal-code" placeholder="77002" required>
+              </div>
+              <div class="field">
+                <label for="c-project">Project type <span class="req">*</span></label>
+                <select id="c-project" name="project" required>
+                  <option value="">Select one</option>
+                  <option>Kitchen remodel</option>
+                  <option>Bathroom remodel</option>
+                  <option>Both kitchen and bathroom</option>
+                  <option>Tub-to-shower conversion</option>
+                  <option>Countertops or cabinetry only</option>
+                  <option>Accessible / aging-in-place</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="c-timeline">Timeline</label>
+                <select id="c-timeline" name="timeline">
+                  <option value="">Select one</option>
+                  <option>As soon as possible</option>
+                  <option>Within 1&ndash;3 months</option>
+                  <option>3&ndash;6 months out</option>
+                  <option>Just researching</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="c-budget">Budget range</label>
+                <select id="c-budget" name="budget">
+                  <option value="">Prefer not to say</option>
+                  <option>Under $15,000</option>
+                  <option>$15,000 &ndash; $35,000</option>
+                  <option>$35,000 &ndash; $75,000</option>
+                  <option>Over $75,000</option>
+                  <option>Not sure, need guidance</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="c-message">Tell us what you have in mind</label>
+                <textarea id="c-message" name="message" placeholder="Room size, what you want changed, anything that is already broken or leaking, and whether you have a hard deadline."></textarea>
+              </div>
+              <div class="field field--full">
+                <label class="consent" for="c-consent">
+                  <input type="checkbox" id="c-consent" name="consent">
+                  <span>I agree to be contacted by phone, text or email about my project. Message and data rates may apply. Consent is not a condition of purchase. See our <a href="#">Privacy Policy</a>.</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn--lg btn--block mt-5" type="submit">Request My Free Consultation</button>
+            <p class="form-status" id="contactStatus" role="status"></p>
+            <p class="form-note mt-5">We reply within one business day. Your information is never sold or shared.</p>
+          </form>
+            <!-- END GHL SWAP POINT (contactForm) -->
+        </div>
+
+        <!-- Details -->
+        <div>
+          <div class="infocard">
+            <h3>Reach us directly</h3>
+            <dl class="infolist">
+              <div>
+                <dt>Phone</dt>
+                <dd class="infolist__value" style="margin:0;"><a href="tel:+17135550142">(713) 555-0142</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd class="infolist__value" style="margin:0;"><a href="mailto:hello@superspeedremodel.com">hello@superspeedremodel.com</a></dd>
+              </div>
+              <div>
+                <dt>Office</dt>
+                <dd class="infolist__value" style="margin:0;">9601 Katy Freeway, Suite 210<br>Houston, TX 77024</dd>
+              </div>
+              <div>
+                <dt>License</dt>
+                <dd class="infolist__value" style="margin:0;">TX RMP #41827 &middot; TACLB #88214</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="infocard">
+            <h3>Hours</h3>
+            <ul class="hours">
+              <li><span>Monday &ndash; Friday</span><span>8:00am &ndash; 6:00pm</span></li>
+              <li><span>Saturday</span><span>By appointment</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+            <p class="form-note mt-5">All times US Central. Consultations are available outside these hours by request.</p>
+          </div>
+
+          <div class="infocard">
+            <h3>What happens next</h3>
+            <div class="grid steps" style="gap:1.5rem;">
+              <div class="step">
+                <h4>We call you back</h4>
+                <p>Within one business day, to ask a few questions and confirm we serve your area.</p>
+              </div>
+              <div class="step">
+                <h4>We book the visit</h4>
+                <p>A time that works for you, including evenings and Saturdays.</p>
+              </div>
+              <div class="step">
+                <h4>You get a written quote</h4>
+                <p>Line-item pricing and a layout direction. No deposit required to receive it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Map ===== -->
+  <section class="section section--tight section--cream">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Find us</p>
+        <h2>Our Houston office</h2>
+      </div>
+      <div class="map-placeholder">
+        <div>
+          <strong>Map placeholder</strong><br>
+          Replace with a Google Maps embed, a static map image, or an interactive map of your choice.<br>
+          Deliberately left out so no third-party map script loads in this demo.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Service area ===== -->
+  <section class="section" id="areas">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Coverage</p>
+        <h2>Where we work</h2>
+        <p class="lede">Greater Houston and the surrounding counties. If your city is not listed, call us anyway. We take projects just outside the boundary depending on scope and schedule.</p>
+      </div>
+
+      <ul class="arealist">
+        <li>Houston</li>
+        <li>Katy</li>
+        <li>Sugar Land</li>
+        <li>Pearland</li>
+        <li>The Woodlands</li>
+        <li>Cypress</li>
+        <li>Spring</li>
+        <li>Kingwood</li>
+        <li>Missouri City</li>
+        <li>League City</li>
+        <li>Friendswood</li>
+        <li>Baytown</li>
+        <li>Conroe</li>
+        <li>Tomball</li>
+        <li>Humble</li>
+        <li>Richmond</li>
+        <li>Rosenberg</li>
+        <li>Stafford</li>
+        <li>Bellaire</li>
+        <li>West University Place</li>
+        <li>Deer Park</li>
+        <li>La Porte</li>
+        <li>Pasadena</li>
+        <li>Webster</li>
+      </ul>
+
+      <p class="mt-6" style="margin-top:2rem;">Not seeing your city? Call <a href="tel:+17135550142">(713) 555-0142</a>. We regularly take projects in Galveston, Baytown and Montgomery County depending on scope and schedule.</p>
+    </div>
+  </section>
+
+  <!-- ===== Short FAQ ===== -->
+  <section class="section section--tight">
+    <div class="wrap wrap--narrow">
+      <div class="section-head">
+        <p class="eyebrow">Before you book</p>
+        <h2>Quick answers</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Is the consultation really free?</summary>
+          <div class="faq__answer">Yes. No charge, no deposit and no obligation to have us come out, measure and put a written line-item quote in your hands. Your quote is good for 30 days.</div>
+        </details>
+        <details>
+          <summary>How long does the visit take?</summary>
+          <div class="faq__answer">About an hour for a single bathroom, longer for a kitchen or a whole-house scope. We would rather spend the time up front than get the estimate wrong.</div>
+        </details>
+        <details>
+          <summary>Do I need to have decided on finishes first?</summary>
+          <div class="faq__answer">No. Bring inspiration photos if you have them, but the first visit is about measurements, existing conditions and budget. Finish selection comes after.</div>
+        </details>
+        <details>
+          <summary>Can I just send photos instead?</summary>
+          <div class="faq__answer">Yes. Email photos to <a href="mailto:hello@superspeedremodel.com">hello@superspeedremodel.com</a> and we will tell you what category of project it is and a rough range before anyone comes out.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Final band ===== -->
+  <section class="band">
+    <div class="wrap">
+      <div>
+        <h2>Would rather just talk to someone?</h2>
+        <p>Call during business hours and a person answers. No phone tree, no callback queue.</p>
+      </div>
+      <a class="btn btn--lg" href="tel:+17135550142">Call (713) 555-0142</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">SS</span>
+          <span>
+            <span class="brand__name">Super Speed Homer Buyers</span>
+            <span class="brand__tag">Kitchen &amp; Bath Remodeling</span>
+          </span>
+        </a>
+        <p>9601 Katy Freeway, Suite 210<br>Houston, TX 77024</p>
+        <p><a href="tel:+17135550142">(713) 555-0142</a><br><a href="mailto:hello@superspeedremodel.com">hello@superspeedremodel.com</a></p>
+        <p>TX RMP #41827 &middot; TACLB #88214</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.8-.1zm0 3.4A6.4 6.4 0 1 0 18.4 12 6.4 6.4 0 0 0 12 5.6zm0 10.5A4.1 4.1 0 1 1 16.1 12 4.1 4.1 0 0 1 12 16.1zm6.6-10.7a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5z"/></svg></a>
+          <a href="#" aria-label="Houzz"><svg viewBox="0 0 24 24"><path d="M7 2v6.5L17 12v10h-4v-5.5H11V22H7V2z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.4-.4-5a2.6 2.6 0 0 0-1.8-1.8C19.1 4.8 12 4.8 12 4.8s-7.1 0-8.8.4A2.6 2.6 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.6 2.6 0 0 0 1.8 1.8c1.7.4 8.8.4 8.8.4s7.1 0 8.8-.4a2.6 2.6 0 0 0 1.8-1.8c.4-1.6.4-5 .4-5zM9.8 15.3V8.7l5.9 3.3z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#kitchens">Kitchen Remodeling</a></li>
+          <li><a href="services.html#bathrooms">Bathroom Remodeling</a></li>
+          <li><a href="services.html#specialty">Tub-to-Shower</a></li>
+          <li><a href="services.html#specialty">Countertops</a></li>
+          <li><a href="services.html#specialty">Accessible Bathrooms</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html#process">Our Process</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#areas">Service Area</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Service area</h4>
+        <p>Houston, Katy, Sugar Land, Pearland, The Woodlands, Cypress, Spring, Kingwood, Missouri City, League City, Baytown, Conroe and nearby communities.</p>
+        <a class="link-arrow" href="#areas">See the full list</a>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>&copy; 2026 Super Speed Homer Buyers. All rights reserved.</span>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <p class="footer__disclaimer"><strong>Demo site.</strong> Super Speed Homer Buyers is a fictional company. Every name, address, phone number, license number, statistic, review, price and offer shown here is sample data for layout purposes and does not describe a real business. Photography is hotlinked from Unsplash and Pexels for comping only and is not licensed for production use.</p>
+  </div>
+</footer>
+
+<div class="mobilebar">
+  <a class="btn btn--ghost" href="tel:+17135550142">Call Now</a>
+  <a class="btn" href="#book">Free Quote</a>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
