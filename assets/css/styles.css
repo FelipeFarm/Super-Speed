@@ -819,22 +819,29 @@ td strong { color: var(--ink); }
 .notice strong { color: #4E3D12; }
 
 /* Info card (contact details) */
+/* open blocks, no boxes - separated by space alone */
 .infocard {
-  background: var(--cream);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
-  padding: var(--sp-6);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 }
-.infocard + .infocard { margin-top: var(--sp-5); }
-.infocard h3 { font-size: var(--fs-lg); font-family: var(--font-ui); font-weight: 700; }
-.infolist { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-4); }
-.infolist dt, .infolist__label {
-  font-size: var(--fs-xs);
+.infocard + .infocard { margin-top: var(--sp-8); }
+.infocard h3 {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
   font-weight: 700;
-  letter-spacing: .08em;
+  color: var(--ink);
+  margin-bottom: var(--sp-5);
+}
+.infolist { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-5); }
+.infolist dt, .infolist__label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: .16em;
   text-transform: uppercase;
   color: var(--slate-2);
-  margin-bottom: 2px;
+  margin-bottom: var(--sp-1);
 }
 .infolist__value { font-size: var(--fs-base); color: var(--ink); }
 .infolist a { text-decoration: none; font-weight: 600; }
@@ -844,10 +851,9 @@ td strong { color: var(--ink); }
   display: flex;
   justify-content: space-between;
   gap: var(--sp-4);
-  padding-block: var(--sp-2);
-  border-bottom: 1px solid var(--line);
+  padding-block: var(--sp-3);
 }
-.hours li:last-child { border-bottom: 0; }
+.hours li span:first-child { color: var(--ink); }
 .hours span:last-child { color: var(--slate); }
 
 /* Map placeholder */
@@ -856,11 +862,9 @@ td strong { color: var(--ink); }
   display: grid;
   place-items: center;
   text-align: center;
-  padding: var(--sp-5);
-  border: 2px dashed var(--line);
+  padding: var(--sp-6);
   border-radius: var(--radius-lg);
-  background:
-    repeating-linear-gradient(45deg, var(--cream) 0 12px, var(--cream-2) 12px 24px);
+  background: var(--cream-2);
   color: var(--slate);
   font-size: var(--fs-sm);
 }
@@ -1095,12 +1099,17 @@ input:focus, select:focus, textarea:focus {
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
 .form-grid .field--full { grid-column: 1 / -1; }
 
+/* the consent label sits inside .field, so undo the uppercase label styling */
+.field label.consent,
 .consent {
   display: flex;
   align-items: flex-start;
   gap: var(--sp-3);
   font-size: var(--fs-xs);
-  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.55;
   color: var(--slate);
 }
 .consent input[type="checkbox"] {
@@ -1129,7 +1138,7 @@ input:focus, select:focus, textarea:focus {
   border: 1px solid var(--line);
   border-top: 2px solid var(--gold);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-sm);
   padding: var(--sp-7);
 }
 
